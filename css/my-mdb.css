@@ -1,0 +1,102 @@
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5 {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    /* background-color: #fff; */
+    /* 線の色 */
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-5 {
+    position: relative;
+    /* 隙間の色 */
+    background-color: inherit;
+    width: 100%;
+}
+
+/* The circles on the timeline */
+.timeline-5::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 1px;
+    /* background-color: #fff; */
+    /* 丸の色 */
+    background-color: #ffa5f5;
+    top: 18px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the right */
+.right-5 {
+    padding: 0px 0px 20px 40px;
+    left: auto;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-5::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    /* なんの色か不明 */
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    /* 吹き出しの色 */
+    border-color: transparent #fff transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-5::after {
+    left: -10px;
+}
+
+@media (max-width: 991px) {
+    .main-timeline-5 {
+        max-width: 100%;
+    }
+}
+.gradient-custom-5 {
+    /* fallback for old browsers */
+    /* background: #ebbba7; */
+    /* 背景の色 */
+    background: #ffffff;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+        to right,
+        rgba(242, 224, 216),
+        rgba(233, 229, 250)
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* グラデーション　反映されなくなった */
+    background: linear-gradient(
+        to right,
+        rgb(242, 224, 216),
+        rgb(233, 229, 250)
+    );
+}
+
+.text {
+    font-size: 20px;
+    a {
+        color: #ffffff;
+    }
+}
