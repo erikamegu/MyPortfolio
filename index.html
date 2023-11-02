@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
 		<!-- Google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +27,10 @@
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 			rel="stylesheet" />
+		<!-- Animaate -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<!-- MDB -->
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
@@ -59,25 +69,25 @@
 			<div class="main-visual-container">
 				<div class="main-visual-text">
 					<!-- 写真に入れる文字 -->
-					<div class="Nurse">Nurs<span>e</span></div>
-					<div class="x"><i class="fas fa-times"></i></div>
-					<div class="Web-designer">
+					<div class="Nurse fadeInUp">Nurs<span>e</span></div>
+					<div class="x fadeInUp"><i class="fas fa-times"></i></div>
+					<div class="Web-designer fadeInUp">
 						W<span>e</span>b d<span>e</span>sign<span>e</span>r
 					</div>
 				</div>
 			</div>
 			<div class="main-consept">
 				<!-- コンセプト -->
-				<h1 class="main-consept-title">
+				<h1 class="main-consept-title fadeInUp">
 					看護師から<br class="mobile-br" />Webデザイナーへ
 				</h1>
 				<p class="main-consept-centence">
 					看護師の経験があるからこそ<span class="mobile-hidden">、</span
 					><br class="mobile-br" />思いを汲み取り寄り添ったデザインで<br />
-					人々や会社の思いを<br class="mobile-br" />『<span
-						class="main-consept-strong"
-						>形</span
-					>』にして『<span class="main-consept-strong">伝</span>』えたい
+					人々や会社の思いを<br class="mobile-br"/><p
+						class="main-consept-strong tada"
+						>『<span class="text-info">形</span>』</p
+					>にして<p class="main-consept-strong tada">『<span class="text-success">伝</span>』</p>えたい
 				</p>
 			</div>
 			<!-- ABOUT -->
@@ -90,15 +100,15 @@
 						src="./image/マイナビ骨伝導イヤホンモデル⑩.webp"
 						alt="" />
 					<div class="profile-content">
-						<div class="profile-content-name">
+						<div class="profile-content-name tada">
 							<ruby>NAITO&emsp;ERIKA</ruby>
 							<h3>内藤&emsp;恵莉香</h3>
 						</div>
-						<div class="profile-content-centence">
+						<p class="profile-content-centence headShake">
 							9年間看護師として働く中で、こどもからお年寄りまで沢山の人達の思いに触れ、
 							その思いをいかに汲み取り、寄り添っていくか考えてきました。
 							Webデザイナーになっていろいろな人の思いを形にして伝えたいです。
-						</div>
+						</p>
 					</div>
 				</div>
 				<!-- 強み -->
@@ -107,74 +117,58 @@
 						<div class="section-title mb-5">
 							<h2 class="text-center">私の強み</h2>
 							<p class="text-lg-center">
-								Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-								ex aliquid fuga eum quidem. Sit sint consectetur velit.
+								看護師として様々な病院、クリニックに勤務し現在Ｗｅｂデザイナーの勉強をしています。
 							</p>
 						</div>
 						<div class="container">
 							<div class="row my-5 gy-5 gy-md-6 gx-xl-6">
 								<div class="col-12 col-sm-4">
-									<div class="text-center">
-										<span class="rounded-circle bg-info p-2">
-											<i class="fa-solid fa-hippo text-white"></i>
-										</span>
-										<h5 class="m-bg-2 m-2">SEO Consulting</h5>
-									</div>
-									<p class="mb-2 text-secondary text-bg-center">
-										Vestibulum bibendum, lorem a blandit lacinia, nisi velit
-										posuere nisl
-									</p>
 									<div class="card text-white bg-info mb-3 mx-auto">
-										<div class="card-header">Header</div>
+										<div class="card-header">
+											<div class="text-center">
+												<span class="rounded-circle bg-info p-2">
+													<i class="fa-solid fa-hippo text-white"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">傾聴力</h5>
+											</div>
+										</div>
 										<div class="card-body">
-											<h5 class="card-title">Secondary card title</h5>
 											<p class="card-text">
-												Some quick example text to build on the card title and
-												make up the bulk of the card's content.
+												相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
 											</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-sm-4">
-									<div class="text-center">
-										<span class="rounded-circle bg-info p-2">
-											<i class="fa-solid fa-hippo text-white"></i>
-										</span>
-										<h5 class="m-bg-2 m-2">SEO Consulting</h5>
-									</div>
-									<p class="mb-2 text-secondary text-bg-center">
-										Vestibulum bibendum, lorem a blandit lacinia, nisi velit
-										posuere nisl
-									</p>
-									<div class="card text-white bg-info mb-3 mx-auto">
-										<div class="card-header">Header</div>
+									<div class="card text-white bg-warning mb-3 mx-auto">
+										<div class="card-header">
+											<div class="text-center">
+												<span class="rounded-circle bg-warning p-2">
+													<i class="fa-solid fa-hippo text-white"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">チャレンジ精神</h5>
+											</div>
+										</div>
 										<div class="card-body">
-											<h5 class="card-title">Secondary card title</h5>
 											<p class="card-text">
-												Some quick example text to build on the card title and
-												make up the bulk of the card's content.
+												様々な分野で知識・技術を身に着けたいと思い小児科、整形外科、精神科の3つの分野に挑戦しました。現在も看護師からWebデザイナーへの転職を目指し、新たな職種へ挑戦しています。
 											</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-sm-4">
-									<div class="text-center">
-										<span class="rounded-circle bg-info p-2">
-											<i class="fa-solid fa-hippo text-white"></i>
-										</span>
-										<h5 class="m-bg-2 m-2">SEO Consulting</h5>
-									</div>
-									<p class="mb-2 text-secondary text-bg-center">
-										Vestibulum bibendum, lorem a blandit lacinia, nisi velit
-										posuere nisl
-									</p>
-									<div class="card text-white bg-info mb-3 mx-auto">
-										<div class="card-header">Header</div>
+									<div class="card text-white bg-success mb-3 mx-auto">
+										<div class="card-header">
+											<div class="text-center">
+												<span class="rounded-circle bg-success p-2">
+													<i class="fa-solid fa-hippo text-white"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">責任感</h5>
+											</div>
+										</div>
 										<div class="card-body">
-											<h5 class="card-title">Secondary card title</h5>
 											<p class="card-text">
-												Some quick example text to build on the card title and
-												make up the bulk of the card's content.
+												相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
 											</p>
 										</div>
 									</div>
@@ -264,7 +258,7 @@
 							</div>
 						</div>
 
-						<div class="timeline-5 right-5">
+						<div class="timeline-5 right-5 inview fadeIn">
 							<div class="card">
 								<div class="card-body p-4">
 									<h5>株式会社ワークキャリア　ジョブトレ校eラーニング受講</h5>
@@ -415,52 +409,34 @@
 				</div>
 			</div>
 			<!-- CONTACT -->
-			<section class="contact-section">
+			<section class="contact-sectionc container my-5">
 				<h2 class="contact-section-title">Contact</h2>
-				<form class="p-5">
-					<div class="mb-3">
-						<label for="exampleInputEmail1" class="form-label"
-							>Email address</label
-						>
-						<input
-							type="email"
-							class="form-control"
-							id="exampleInputEmail1"
-							aria-describedby="emailHelp" />
-						<div id="emailHelp" class="form-text">
-							We'll never share your email with anyone else.
+				<div class="row justify-content-center">
+					<form class="p-5 col-12 col-lg-6">
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">お名前</label>
+							<input
+								type="email"
+								class="form-control"
+								id="exampleInputEmail1"
+								aria-describedby="emailHelp" />
+							<div id="emailHelp" class="form-text"></div>
 						</div>
-					</div>
-					<div class="mb-3">
-						<label for="exampleInputPassword1" class="form-label"
-							>Password</label
-						>
-						<input
-							type="password"
-							class="form-control"
-							id="exampleInputPassword1" />
-					</div>
-					<div class="mb-3 form-check">
-						<input
-							type="checkbox"
-							class="form-check-input"
-							id="exampleCheck1" />
-						<label class="form-check-label" for="exampleCheck1"
-							>Check me out</label
-						>
-					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label"
+								>メッセージ</label
+							>
+							<input
+								type="password"
+								class="form-control"
+								id="exampleInputPassword1" />
+						</div>
+						<button type="submit" class="btn btn-primary">送信</button>
+					</form>
+				</div>
 			</section>
 		</main>
-		<script
-			src="./image/https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"></script>
-		<script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"></script>
 		<script src="js/menu.js"></script>
+		<script src="js/fadein.js"></script>
 	</body>
 </html>
