@@ -3,18 +3,25 @@
 body {
     font-family: "Kiwi Maru", "Lato", sans-serif;
 }
-/* ロゴ */
-.header-logo {
-    display: inline;
+
+.logo-name {
     font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.header-logo img {
+    width: 70px;
+    height: 70px;
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
-/* ナビ */
+
 header nav {
     display: flex;
     align-items: flex-end;
@@ -39,23 +46,21 @@ header li {
     display: none;
 }
 
-/* メイン*/
 .main-visual-container {
     width: 100%;
     height: 100vh;
-    background-image: url("../image/マイナビ骨伝導イヤホンモデル①.jpg");
+    background-image: url("../image/main-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-/* 写真の文字 */
+
 .main-visual-text {
     font-size: 50px;
     padding: 40px;
     letter-spacing: 5px;
     color: #fff;
-    // font-weight: bold;
     font-style: italic;
     text-align: center;
     font-family: "Kiwi Maru", "Kaisei Opti", "Lato", sans-serif;
@@ -67,7 +72,6 @@ header li {
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
 
-    /* eの文字 */
     & span {
         color: rgb(255, 172, 251);
         font-size: 40px;
@@ -75,13 +79,12 @@ header li {
     & .Web-designer {
         white-space: nowrap;
     }
-    /* ✕ */
     & .x {
         font-size: 40px;
         color: #fff;
     }
 }
-/* コンセプト */
+
 .main-consept {
     padding: 0 10px;
     margin-top: 300px;
@@ -118,7 +121,6 @@ header li {
     }
 }
 
-/* ABOUT */
 .about-section {
     margin-top: 250px;
     margin-bottom: 200px;
@@ -132,13 +134,12 @@ header li {
         font-family: "Kiwi Maru", "Lato", sans-serif;
     }
 }
-/* プロフィール */
+
 .profile {
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
 
-    /* プロフィール写真 */
     &-img {
         width: 400px;
         height: auto;
@@ -177,7 +178,7 @@ header li {
 .mobile-br {
     display: none;
 }
-/* 強み */
+
 .strength-title {
     text-align: center;
     font-size: 100px;
@@ -211,7 +212,6 @@ header li {
 .header-dot-border3 {
     border-bottom: 3px rgb(72, 235, 72) dotted;
 }
-/* WORK */
 .work-section {
     margin-top: 250px;
 }
@@ -232,12 +232,21 @@ header li {
 .btn-dark:hover {
     background-color: #5e5e5e;
 }
-/* CONTACT */
 .contact-section {
     margin-top: 250px;
 }
 .contact-section-title {
     text-align: center;
+}
+footer {
+    background-color: rgb(255, 172, 251);
+    color: white;
+    font-size: 14px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 800px) {

@@ -19,7 +19,6 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
             rel="stylesheet"
         />
-        <!-- kaisei opti  kiwi maru -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -58,11 +57,12 @@
     </head>
     <body>
         <header>
-            <!-- ロゴ -->
-            <div class="header-logo">Erika Naito</div>
+            <div class="header-logo">
+                <img src="image/portfolio-logo.png" alt="" />
+                <span class="logo-name">Erika Naito</span>
+            </div>
             <nav class="list-menu">
                 <ul>
-                    <!-- ナビ -->
                     <li><a href="#">TopPage</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#works">Works</a></li>
@@ -85,7 +85,6 @@
         <main>
             <div class="main-visual-container">
                 <div class="main-visual-text">
-                    <!-- 写真に入れる文字 -->
                     <div class="Nurse fadeInUp">Nurs<span>e</span></div>
                     <div class="x fadeInUp"><i class="fas fa-times"></i></div>
                     <div class="Web-designer fadeInUp">
@@ -94,7 +93,6 @@
                 </div>
             </div>
             <div class="main-consept">
-                <!-- コンセプト -->
                 <h1 class="main-consept-title fadeInUp">
                     看護師から<br class="mobile-br" />Webデザイナーへ
                 </h1>
@@ -117,14 +115,12 @@
                 </p>
                 <span class="text-sabu">えたい</span>
             </div>
-            <!-- ABOUT -->
             <section class="about-section">
                 <h2 class="about-section-title">About</h2>
                 <div class="profile">
-                    <!-- プロフィール -->
                     <img
                         class="profile-img fadeIn"
-                        src="./image/マイナビ骨伝導イヤホンモデル⑩.webp"
+                        src="./image/about-img.webp"
                         alt=""
                     />
                     <div class="profile-content swing">
@@ -139,7 +135,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- 強み -->
                 <section id="services" class="services">
                     <div class="container">
                         <div class="section-title mb-5">
@@ -236,7 +231,6 @@
                     </div>
                 </section>
             </section>
-            <!-- タイムライン -->
             <section class="gradient-custom-5">
                 <div class="container py-5">
                     <div class="main-timeline-5">
@@ -270,19 +264,7 @@
                                     </div>
                                     <div
                                         class="cols-4 col-12 col-sm-4 d-flex align-items-center"
-                                    >
-                                        <!-- <img
-                                            src="./image/SNOW_20220306_183455_439.jpg"
-                                            alt=""
-                                            class="timeline-image object-fit-cover border rounded-circle"
-                                            style="
-                                                width: 150px;
-                                                height: 150px;
-                                                object-fit: cover;
-                                                object-position: center top;
-                                            "
-                                        /> -->
-                                    </div>
+                                    ></div>
                                 </div>
                             </div>
                         </div>
@@ -505,12 +487,8 @@
                     </div>
                 </div>
             </section>
-
-            <!-- WORK -->
             <section class="work-section">
                 <h2 class="work-section-title">Works</h2>
-
-                <!-- 作品集 -->
                 <div class="row m-0 m-s m-lg-4">
                     <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
                         <div class="card h-100">
@@ -1024,7 +1002,6 @@
                     </div>
                 </div>
             </section>
-            <!-- CONTACT -->
             <section class="work-section container">
                 <h2 class="work-section-title">Contact</h2>
 
@@ -1059,6 +1036,9 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <p>©2023 Erika's Portfolio. All Rights Reserved</p>
+        </footer>
         <script src="js/menu.js"></script>
         <script src="js/fadein.js"></script>
     </body>

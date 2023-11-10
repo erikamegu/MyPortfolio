@@ -7,7 +7,6 @@
     border-radius: 5px;
 }
 
-/*ボタン内側*/
 .openbtn span {
     display: inline-block;
     transition: all 0.4s; /*アニメーションの設定*/
@@ -65,7 +64,6 @@
 .circle-bg {
     position: fixed;
     z-index: 3;
-    /*丸の形*/
     width: 100px;
     height: 100px;
     border-radius: 50%;
