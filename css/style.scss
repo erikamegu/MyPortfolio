@@ -249,6 +249,10 @@ footer {
     margin-top: 100px;
 }
 
+.copyright {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 800px) {
     .profile {
         display: block;
@@ -273,6 +277,13 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .header-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo-name {
+        font-size: 25px;
+    }
     .mobile-hidden {
         display: none;
     }
@@ -289,12 +300,12 @@ footer {
     .main-visual-text {
         font-size: 50px;
         padding: 0;
-        top: 70%;
-        right: 50%;
+        top: 80%;
+        right: 52%;
         transform: translate(50%, -50%);
     }
     .main-visual-text * {
-        letter-spacing: 2.5px;
+        letter-spacing: 1.5px;
     }
     .main-visual-text span {
         font-size: 50px;
@@ -344,5 +355,8 @@ footer {
     .right-5::before,
     ::after {
         display: none !important;
+    }
+    .copyright {
+        font-size: 12px;
     }
 }
