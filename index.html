@@ -1,1058 +1,764 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"
-        ></script>
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Kiwi+Maru:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
-        <!-- reset.css ress -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/ress/dist/ress.min.css"
-        />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Kiwi+Maru:wght@400;500&display=swap"
+			rel="stylesheet" />
+		<!-- reset.css ress -->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-        <!-- Font Awesome -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <!-- Google fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Animaate -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <!-- MDB -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/menu.css" />
-        <link rel="stylesheet" href="css/my-mdb.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header-logo">
-                <img src="image/portfolio-logo.png" alt="" />
-                <span class="logo-name">Erika Naito</span>
-            </div>
-            <nav class="list-menu">
-                <ul>
-                    <li><a href="#">TopPage</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skills">Skills</a></li>
-                    <li><a href="index.html#works">Works</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="openbtn"><span></span><span></span><span></span></div>
-            <nav id="g-nav">
-                <div id="g-nav-list">
-                    <ul>
-                        <li><a href="#">Top</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#skills">Skills</a></li>
-                        <li><a href="index.html#works">Works</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="circle-bg"></div>
-        </header>
-        <main>
-            <div class="main-visual-container">
-                <div class="main-visual-text">
-                    <div class="Nurse fadeInUp">Nurs<span>e</span></div>
-                    <div class="x fadeInUp"><i class="fas fa-times"></i></div>
-                    <div class="Web-designer fadeInUp">
-                        W<span>e</span>b d<span>e</span>sign<span>e</span>r
-                    </div>
-                </div>
-            </div>
-            <div class="main-consept">
-                <h1 class="main-consept-title fadeInUp">
-                    看護師から<br class="mobile-br" />Webデザイナーへ
-                </h1>
-                <p class="main-consept-centence">
-                    看護師の経験があるからこそ、<span
-                        class="mobile-hidden"
-                    ></span
-                    ><br
-                        class="mobile-br"
-                    />思いを汲み取り寄り添ったデザインで<br />
-                    人々や会社の思いを<br class="mobile-br" />
-                </p>
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet" />
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+			rel="stylesheet" />
+		<!-- Animaate -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- MDB -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/menu.css" />
+		<link rel="stylesheet" href="css/my-mdb.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-logo">
+				<img src="image/portfolio-logo.png" alt="" />
+				<span class="logo-name">Erika Naito</span>
+			</div>
+			<nav class="list-menu">
+				<ul>
+					<li><a href="#">TopPage</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#skills">Skills</a></li>
+					<li><a href="index.html#works">Works</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="openbtn"><span></span><span></span><span></span></div>
+			<nav id="g-nav">
+				<div id="g-nav-list">
+					<ul>
+						<li><a href="#">Top</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#skills">Skills</a></li>
+						<li><a href="index.html#works">Works</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="circle-bg"></div>
+		</header>
+		<main>
+			<div class="main-visual-container">
+				<div class="main-visual-text">
+					<div class="Nurse fadeInUp">Nurs<span>e</span></div>
+					<div class="x fadeInUp"><i class="fas fa-times"></i></div>
+					<div class="Web-designer fadeInUp">
+						W<span>e</span>b d<span>e</span>sign<span>e</span>r
+					</div>
+				</div>
+			</div>
+			<div class="main-consept">
+				<h1 class="main-consept-title fadeInUp">
+					看護師から<br class="mobile-br" />Webデザイナーへ
+				</h1>
+				<p class="main-consept-centence">
+					看護師の経験があるからこそ、<span class="mobile-hidden"></span
+					><br class="mobile-br" />思いを汲み取り寄り添ったデザインで<br />
+					人々や会社の思いを<br class="mobile-br" />
+				</p>
 
-                <p class="main-consept-strong tada">
-                    『<span class="text-pink">形</span>』
-                </p>
-                <span class="text-sabu">にして</span>
-                <p class="main-consept-strong tada">
-                    『<span class="text-pink">伝</span>』
-                </p>
-                <span class="text-sabu">えたい</span>
-            </div>
-            <section class="about-section" id="about">
-                <h2 class="work-section-title fadeInUp">About</h2>
-                <div class="profile">
-                    <img
-                        class="profile-img fadeIn"
-                        src="./image/about-img.webp"
-                        alt=""
-                    />
-                    <div class="profile-content swing">
-                        <div class="profile-content-name tada">
-                            <ruby>NAITO&emsp;ERIKA</ruby>
-                            <h3>内藤&emsp;恵莉香</h3>
-                        </div>
-                        <p class="profile-content-centence tada">
-                            9年間看護師として働く中で、こどもからお年寄りまで沢山の人達の思いに触れ、
-                            その思いをいかに汲み取り、寄り添っていくか考えてきました。
-                            Webデザイナーになっていろいろな人の思いを形にして伝えたいです。
-                        </p>
-                    </div>
-                </div>
-                <section id="services" class="services">
-                    <div class="container">
-                        <div class="section-title mb-5">
-                            <h2 class="text-center fadeInUp about-text">
-                                私の強み
-                            </h2>
-                            <p class="text-lg-center fadeInUp">
-                                看護師として様々な病院、クリニックに勤務し現在Ｗｅｂデザイナーの勉強をしています。
-                            </p>
-                        </div>
-                        <div class="container">
-                            <div class="row my-5 gy-md-6 gx-xl-6">
-                                <div class="col-12 col-lg-4 mb-3">
-                                    <div
-                                        class="card text-black border-skyblue h-100 mb-3 rubberBand"
-                                    >
-                                        <div
-                                            class="card-header header-dot-border1"
-                                        >
-                                            <div class="text-center">
-                                                <span
-                                                    class="rounded-circle bg-white p-2"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-hippo text-kaba"
-                                                    ></i>
-                                                </span>
-                                                <h5 class="m-bg-2 m-2">
-                                                    傾聴力
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 mb-3">
-                                    <div
-                                        class="card text-black border-yellow h-100 rubberBand"
-                                    >
-                                        <div
-                                            class="card-header header-dot-border2"
-                                        >
-                                            <div class="text-center">
-                                                <span
-                                                    class="rounded-circle bg-white p-2"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-hippo text-kaba2"
-                                                    ></i>
-                                                </span>
-                                                <h5 class="m-bg-2 m-2">
-                                                    チャレンジ精神
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                学びのために小児、整形、精神など様々な分野に挑戦しました。今は看護師からWebデザイナーへの転職に挑戦しています。
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 mb-3">
-                                    <div
-                                        class="card text-black border-green h-100 rubberBand"
-                                    >
-                                        <div
-                                            class="card-header header-dot-border3"
-                                        >
-                                            <div class="text-center">
-                                                <span
-                                                    class="rounded-circle bg-white p-2"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-hippo text-kaba3"
-                                                    ></i>
-                                                </span>
-                                                <h5 class="m-bg-2 m-2">
-                                                    責任感
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="gradient-custom-5">
-                <h2 class="timeline-section-title fadeInUp">Timeline</h2>
-                <div class="container py-5">
-                    <div class="main-timeline-5">
-                        <div class="timeline-5 right-5">
-                            <div class="card border-color fadeInUp">
-                                <div class="card-body p-4 col-12">
-                                    <h5>静岡県立大学短期大学部卒業</h5>
-                                    <span class="small text-muted"
-                                        ><i class="fas fa-clock me-1"></i
-                                        >2014.4</span
-                                    >
-                                    <p class="mt-2">
-                                        看護師を目指し大学３年間で看護を学ぶ
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-5 right-5">
-                            <div class="card border-color fadeInUp">
-                                <div class="row">
-                                    <div class="card-body p-4 col-12 col-sm-8">
-                                        <h5>静岡県立こども病院</h5>
-                                        <span class="small text-muted"
-                                            ><i class="fas fa-clock me-1"></i
-                                            >2014.4~2018.3
-                                        </span>
-                                        <p class="mt-2">
-                                            病気をかかえるこども達の看護を行う<br />
-                                            病気と戦うこども達やその家族の思いに触れる
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="cols-4 col-12 col-sm-4 d-flex align-items-center"
-                                    ></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-5 right-5">
-                            <div class="card border-color fadeInUp">
-                                <div class="card-body p-4">
-                                    <h5>藤枝駿府病院</h5>
-                                    <span class="small text-muted"
-                                        ><i class="fas fa-clock me-1"></i
-                                        >2018.4~2021.8</span
-                                    >
-                                    <p class="mt-2">
-                                        心の病気をかかえる患者さんの看護を行う<br />
-                                        患者さんの思いを傾聴し、寄り添うことの大切さを学ぶ
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-5 right-5">
-                            <div class="card border-color fadeInUp">
-                                <div class="card-body p-4">
-                                    <h5>六本木整形外科・内科クリニック</h5>
-                                    <span class="small text-muted"
-                                        ><i class="fas fa-clock me-1"></i
-                                        >2022.3~2023.6</span
-                                    >
-                                    <p class="mt-2">
-                                        怪我や障害で苦しむ患者さんの看護を行う<br />
-                                        こどもから高齢者、外国人など様々な患者さんと関わる
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-5 right-5">
-                            <div class="card border-color fadeInUp">
-                                <div class="card-body p-4">
-                                    <h5>Webデザイナーを目指す</h5>
-                                    <span class="small text-muted"
-                                        ><i class="fas fa-clock me-1"></i
-                                        >2023.7~</span
-                                    >
-                                    <p class="mt-2">
-                                        看護師の仕事を通してデザインに興味を持ち、人々の思いを『形』にして『伝える』仕事をしたいと考えWebデザイナーを目指す<br />
-                                        独学で勉強を始める
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+				<p class="main-consept-strong tada">
+					『<span class="text-pink">形</span>』
+				</p>
+				<span class="text-sabu">にして</span>
+				<p class="main-consept-strong tada">
+					『<span class="text-pink">伝</span>』
+				</p>
+				<span class="text-sabu">えたい</span>
+			</div>
+			<section class="about-section" id="about">
+				<h2 class="work-section-title fadeInUp">About</h2>
+				<div class="profile">
+					<img class="profile-img fadeIn" src="./image/about-img.webp" alt="" />
+					<div class="profile-content swing">
+						<div class="profile-content-name tada">
+							<ruby>NAITO&emsp;ERIKA</ruby>
+							<h3>内藤&emsp;恵莉香</h3>
+						</div>
+						<p class="profile-content-centence tada">
+							9年間看護師として働く中で、こどもからお年寄りまで沢山の人達の思いに触れ、
+							その思いをいかに汲み取り、寄り添っていくか考えてきました。
+							Webデザイナーになっていろいろな人の思いを形にして伝えたいです。
+						</p>
+					</div>
+				</div>
+				<section id="services" class="services">
+					<div class="container">
+						<div class="section-title mb-5">
+							<h2 class="text-center fadeInUp about-text">私の強み</h2>
+							<p class="text-lg-center fadeInUp">
+								看護師として様々な病院、クリニックに勤務し現在Ｗｅｂデザイナーの勉強をしています。
+							</p>
+						</div>
+						<div class="container">
+							<div class="row my-5 gy-md-6 gx-xl-6">
+								<div class="col-12 col-lg-4 mb-3">
+									<div
+										class="card text-black border-skyblue h-100 mb-3 rubberBand">
+										<div class="card-header header-dot-border1">
+											<div class="text-center">
+												<span class="rounded-circle bg-white p-2">
+													<i class="fa-solid fa-hippo text-kaba"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">傾聴力</h5>
+											</div>
+										</div>
+										<div class="card-body">
+											<p class="card-text">
+												相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 mb-3">
+									<div class="card text-black border-yellow h-100 rubberBand">
+										<div class="card-header header-dot-border2">
+											<div class="text-center">
+												<span class="rounded-circle bg-white p-2">
+													<i class="fa-solid fa-hippo text-kaba2"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">チャレンジ精神</h5>
+											</div>
+										</div>
+										<div class="card-body">
+											<p class="card-text">
+												学びのために小児、整形、精神など様々な分野に挑戦しました。今は看護師からWebデザイナーへの転職に挑戦しています。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 mb-3">
+									<div class="card text-black border-green h-100 rubberBand">
+										<div class="card-header header-dot-border3">
+											<div class="text-center">
+												<span class="rounded-circle bg-white p-2">
+													<i class="fa-solid fa-hippo text-kaba3"></i>
+												</span>
+												<h5 class="m-bg-2 m-2">責任感</h5>
+											</div>
+										</div>
+										<div class="card-body">
+											<p class="card-text">
+												相手が話しやすい環境づくりを心がけ、今どのようなニーズや不安を抱えているのかを汲み取り、思いに寄り添います。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="gradient-custom-5">
+				<h2 class="timeline-section-title fadeInUp">Timeline</h2>
+				<div class="container py-5">
+					<div class="main-timeline-5">
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="card-body p-4 col-12">
+									<h5>静岡県立大学短期大学部卒業</h5>
+									<span class="small text-muted"
+										><i class="fas fa-clock me-1"></i>2014.4</span
+									>
+									<p class="mt-2">看護師を目指し大学３年間で看護を学ぶ</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="row">
+									<div class="card-body p-4 col-12 col-sm-8">
+										<h5>静岡県立こども病院</h5>
+										<span class="small text-muted"
+											><i class="fas fa-clock me-1"></i>2014.4~2018.3
+										</span>
+										<p class="mt-2">
+											病気をかかえるこども達の看護を行う<br />
+											病気と戦うこども達やその家族の思いに触れる
+										</p>
+									</div>
+									<div
+										class="cols-4 col-12 col-sm-4 d-flex align-items-center"></div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="card-body p-4">
+									<h5>藤枝駿府病院</h5>
+									<span class="small text-muted"
+										><i class="fas fa-clock me-1"></i>2018.4~2021.8</span
+									>
+									<p class="mt-2">
+										心の病気をかかえる患者さんの看護を行う<br />
+										患者さんの思いを傾聴し、寄り添うことの大切さを学ぶ
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="card-body p-4">
+									<h5>六本木整形外科・内科クリニック</h5>
+									<span class="small text-muted"
+										><i class="fas fa-clock me-1"></i>2022.3~2023.6</span
+									>
+									<p class="mt-2">
+										怪我や障害で苦しむ患者さんの看護を行う<br />
+										こどもから高齢者、外国人など様々な患者さんと関わる
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="card-body p-4">
+									<h5>Webデザイナーを目指す</h5>
+									<span class="small text-muted"
+										><i class="fas fa-clock me-1"></i>2023.7~</span
+									>
+									<p class="mt-2">
+										看護師の仕事を通してデザインに興味を持ち、人々の思いを『形』にして『伝える』仕事をしたいと考えWebデザイナーを目指す<br />
+										独学で勉強を始める
+									</p>
+								</div>
+							</div>
+						</div>
 
-                        <div class="timeline-5 right-5 inview">
-                            <div class="card border-color fadeInUp">
-                                <div class="card-body p-4">
-                                    <h5>
-                                        株式会社ワークキャリア　ジョブトレ静岡校eラーニング受講
-                                    </h5>
-                                    <span class="small text-muted"
-                                        ><i class="fas fa-clock me-1"></i
-                                        >2023.9.22~11.21</span
-                                    >
-                                    <p class="mt-2">★</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work-section" id="skills">
-                <h2 class="work-section-title fadeInUp">Skills</h2>
+						<div class="timeline-5 right-5 fadeInUp">
+							<div class="card border-color">
+								<div class="card-body p-4">
+									<h5>
+										株式会社ワークキャリア　ジョブトレ静岡校eラーニング受講
+									</h5>
+									<span class="small text-muted"
+										><i class="fas fa-clock me-1"></i>2023.9.22~11.21</span
+									>
+									<p class="mt-2">
+										ITリテラシーから始まりデザインツール、ローコードツール、CMS、コーディングの基礎を学びました。
+										またjQueryやSassなど発展的な内容も学習中です。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work-section" id="skills">
+				<h2 class="work-section-title fadeInUp">Skills</h2>
 
-                <div class="row mx-0 justify-content-center">
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-black text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-figma fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Figma</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-danger text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-html5 fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">HTML</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-primary text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-css3 fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">CSS</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-warning text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-js fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">jQuery</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-pink text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-sass fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Sass</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-cyan text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-wordpress-simple fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Wordpress</p>
-                    </div>
+				<div class="row mx-0 justify-content-center">
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-black text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-figma fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Figma</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-danger text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-html5 fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">HTML</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-primary text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-css3 fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">CSS</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-warning text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-js fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">jQuery</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-pink text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-sass fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Sass</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-cyan text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-wordpress-simple fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Wordpress</p>
+					</div>
 
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-dark text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-solid fa-a fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Illustrator</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-info text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-solid fa-p fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Photoshop</p>
-                    </div>
-                    <div class="col-4 col-lg-3 card m-lg-2 tada">
-                        <div class="card-header d-flex justify-content-center">
-                            <div
-                                class="bg-danger text-dark rounded-circle position-relative"
-                                style="width: 3.5em; height: 3.5rem"
-                            >
-                                <div
-                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                >
-                                    <i
-                                        class="fa-brands fa-bootstrap fa-xl text-white"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title text-center my-1">Bootstrap</p>
-                    </div>
-                </div>
-            </section>
-            <section class="work-section" id="works">
-                <h2 class="work-section-title fadeInUp">Works</h2>
-                <div class="row m-0 m-s m-lg-4">
-                    <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
-                        <div class="card h-100">
-                            <img
-                                src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
-                                class="card-img-top"
-                                alt="..."
-                            />
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center">
-                                        しずおか食堂 HP
-                                    </h5>
-                                </div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-dark text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-solid fa-a fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Illustrator</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-info text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-solid fa-p fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Photoshop</p>
+					</div>
+					<div class="col-4 col-lg-3 card m-lg-2 tada">
+						<div class="card-header d-flex justify-content-center">
+							<div
+								class="bg-danger text-dark rounded-circle position-relative"
+								style="width: 3.5em; height: 3.5rem">
+								<div
+									class="position-absolute top-50 start-50 translate-middle text-nowrap">
+									<i class="fa-brands fa-bootstrap fa-xl text-white"></i>
+								</div>
+							</div>
+						</div>
+						<p class="card-title text-center my-1">Bootstrap</p>
+					</div>
+				</div>
+			</section>
+			<section class="work-section" id="works">
+				<h2 class="work-section-title fadeInUp">Works</h2>
+				<div class="row m-0 m-s m-lg-4">
+					<div class="col-12 col-sm-6 col-lg-4 my-2 h-100 fadeIn">
+						<div class="card">
+							<img
+								src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
+								class="card-img-top"
+								alt="..." />
+							<div class="card-body">
+								<div class="card-header">
+									<h5 class="card-title text-center">しずおか食堂 HP</h5>
+								</div>
 
-                                <div class="d-flex mt-3">
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-black text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-figma text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">
-                                            Figma
-                                        </p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-danger text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-html5 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">HTML</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-css3 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">CSS</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-warning text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-js text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">
-                                            jQuery
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="card-text">
-                                    モーダルにはMacromodal.jsを使用 Some quick
-                                    example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <div
-                                    class="card-footer mt-auto px-0 d-flex justify-content-between"
-                                >
-                                    <a href="#" class="btn btn-pink"
-                                        ><i
-                                            class="fa-solid fa-link text-white me-1"
-                                        ></i
-                                        >サイトへ</a
-                                    >
-                                    <a href="#" class="btn btn-dark"
-                                        ><i
-                                            class="fa-brands fa-figma text-white me-1"
-                                        ></i
-                                        >Figmaへ</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
-                        <div class="card h-100">
-                            <img
-                                src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
-                                class="card-img-top"
-                                alt="..."
-                            />
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center">
-                                        こどもクリニックHP
-                                    </h5>
-                                </div>
-                                <div class="d-flex mt-3">
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-danger text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-html5 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">HTML</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-css3 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">CSS</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-warning text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-js text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">
-                                            jQuery
-                                        </p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-pink text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-sass text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p
-                                            class="fw-light fw-light text-center"
-                                        >
-                                            Sass
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="card-text">
-                                    モーダルにはMacromodal.jsを使用 Some quick
-                                    example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <div
-                                    class="card-footer px-0 d-flex justify-content-between"
-                                >
-                                    <a href="#" class="btn btn-pink"
-                                        ><i
-                                            class="fa-solid fa-link text-white me-1"
-                                        ></i
-                                        >サイトへ</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
-                        <div class="card h-100">
-                            <img
-                                src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
-                                class="card-img-top"
-                                alt="..."
-                            />
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center">
-                                        かぴぱらさん
-                                    </h5>
-                                </div>
-                                <div class="d-flex mt-3">
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-danger text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-html5 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">HTML</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-css3 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">CSS</p>
-                                    </div>
-                                </div>
-                                <p class="card-text">
-                                    モーダルにはMacromodal.jsを使用 Some quick
-                                    example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <div
-                                    class="card-footer px-0 d-flex justify-content-between"
-                                >
-                                    <a href="#" class="btn btn-pink"
-                                        ><i
-                                            class="fa-solid fa-link text-white me-1"
-                                        ></i
-                                        >サイトへ</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
-                        <div class="card h-100">
-                            <img
-                                src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
-                                class="card-img-top"
-                                alt="..."
-                            />
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center">
-                                        ポートフォリオ
-                                    </h5>
-                                </div>
-                                <div class="d-flex mt-3">
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-danger text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-html5 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">HTML</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-css3 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">CSS</p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-warning text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-js text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">
-                                            jQuery
-                                        </p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-pink text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-sass text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p
-                                            class="fw-light fw-light text-center"
-                                        >
-                                            Sass
-                                        </p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-danger text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-bootstrap text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p
-                                            class="fw-light fw-light text-center"
-                                        >
-                                            Bootstrap
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="card-text">
-                                    モーダルにはMacromodal.jsを使用 Some quick
-                                    example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <div
-                                    class="card-footer px-0 d-flex justify-content-between"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 my-2 fadeIn">
-                        <div class="card h-100">
-                            <img
-                                src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
-                                class="card-img-top"
-                                alt="..."
-                            />
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center">
-                                        Voido
-                                    </h5>
-                                </div>
-                                <div class="d-flex mt-3">
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-wordpress-simple text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">
-                                            Wordpress
-                                        </p>
-                                    </div>
-                                    <div class="mx-2">
-                                        <div
-                                            class="d-flex justify-content-center"
-                                        >
-                                            <div
-                                                class="bg-primary text-dark rounded-circle position-relative"
-                                                style="width: 2em; height: 2rem"
-                                            >
-                                                <div
-                                                    class="position-absolute top-50 start-50 translate-middle text-nowrap"
-                                                >
-                                                    <i
-                                                        class="fa-brands fa-css3 text-white"
-                                                    ></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="fw-light text-center">CSS</p>
-                                    </div>
-                                </div>
-                                <p class="card-text">
-                                    モーダルにはMacromodal.jsを使用 Some quick
-                                    example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <div
-                                    class="card-footer px-0 d-flex justify-content-between"
-                                >
-                                    <a href="#" class="btn btn-pink"
-                                        ><i
-                                            class="fa-solid fa-link text-white me-1"
-                                        ></i
-                                        >サイトへ</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work-section container" id="contact">
-                <h2 class="timeline-section-title fadeInUp">Contact</h2>
+								<div class="d-flex mt-3">
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-black text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-figma text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">Figma</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-danger text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-html5 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">HTML</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-primary text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-css3 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">CSS</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-warning text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-js text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">jQuery</p>
+									</div>
+								</div>
+								<p class="card-text">
+									架空の食堂ホームページをイメージして作成しました。Figmaのデザインカンプを元にコーディングを行い、サイトに動きを付ける際CSSライブラリとjQueryを利用しました。
+								</p>
+								<div
+									class="card-footer mt-auto px-0 d-flex justify-content-between">
+									<a href="#" class="btn btn-pink"
+										><i class="fa-solid fa-link text-white me-1"></i>サイトへ</a
+									>
+									<a href="#" class="btn btn-dark"
+										><i class="fa-brands fa-figma text-white me-1"></i
+										>Figmaへ</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 my-2 h-100 fadeIn">
+						<div class="card">
+							<img
+								src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
+								class="card-img-top"
+								alt="..." />
+							<div class="card-body">
+								<div class="card-header">
+									<h5 class="card-title text-center">こどもクリニックHP</h5>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-danger text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-html5 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">HTML</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-primary text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-css3 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">CSS</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-warning text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-js text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">jQuery</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-pink text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-sass text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light fw-light text-center">Sass</p>
+									</div>
+								</div>
+								<p class="card-text">
+									架空のクリニックHPを作成する中でSassを使用しました。
+									またモーダル部分をMicromodal.jsを利用し実装する際、全てを自作するのではなくライブラリをうまく取り入れる方が効率もクオリティも上がると感じました。
+								</p>
+								<div class="card-footer px-0 d-flex justify-content-between">
+									<a href="#" class="btn btn-pink"
+										><i class="fa-solid fa-link text-white me-1"></i>サイトへ</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 my-2 h-100 fadeIn">
+						<div class="card">
+							<img
+								src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
+								class="card-img-top"
+								alt="..." />
+							<div class="card-body">
+								<div class="card-header">
+									<h5 class="card-title text-center">かぴぱらさん</h5>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-danger text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-html5 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">HTML</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-primary text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-css3 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">CSS</p>
+									</div>
+								</div>
+								<p class="card-text">
+									HTML、CSSの基礎を勉強するために、初めて買った本で実際に作ったサイトです。
+									レイアウトに合わせてパーツを配置したり、細かなデザインを設定するのが大変でしたがとても楽しく学べました。
+								</p>
+								<div class="card-footer px-0 d-flex justify-content-between">
+									<a href="#" class="btn btn-pink"
+										><i class="fa-solid fa-link text-white me-1"></i>サイトへ</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 my-2 h-100 fadeIn">
+						<div class="card">
+							<img
+								src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
+								class="card-img-top"
+								alt="..." />
+							<div class="card-body">
+								<div class="card-header">
+									<h5 class="card-title text-center">ポートフォリオ</h5>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-pink text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-sass text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light fw-light text-center">Sass</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-warning text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-js text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">jQuery</p>
+									</div>
 
-                <div class="row justify-content-center">
-                    <form class="p-5 col-12 col-lg-6">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label"
-                                >Name</label
-                            >
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="exampleInputEmail1"
-                                aria-describedby="emailHelp"
-                            />
-                            <div id="emailHelp" class="form-text"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label
-                                for="exampleInputPassword1"
-                                class="form-label"
-                                >Message</label
-                            >
-                            <input
-                                type="password"
-                                class="form-control"
-                                id="exampleInputPassword1"
-                            />
-                        </div>
-                        <button type="submit" class="btn btn-pink send-btn">
-                            send
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p class="copyright">
-                ©2023 Erika's Portfolio. All Rights Reserved
-            </p>
-        </footer>
-        <script src="js/menu.js"></script>
-        <script src="js/fadein.js"></script>
-    </body>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-danger text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-bootstrap text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light fw-light text-center">Bootstrap</p>
+									</div>
+								</div>
+								<p class="card-text">
+									ポートフォリオは基本的にはBootstrapを使用して画面を作成しました。
+									CSSフレームワークを使えば既に設定されたクラスをHTMLで設定するだけで。
+								</p>
+								<div
+									class="card-footer px-0 d-flex justify-content-between"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 my-2 h-100 fadeIn">
+						<div class="card">
+							<img
+								src="./image/マイナビ骨伝導イヤホンモデル②.jpg"
+								class="card-img-top"
+								alt="..." />
+							<div class="card-body">
+								<div class="card-header">
+									<h5 class="card-title text-center">Voido</h5>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-primary text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i
+														class="fa-brands fa-wordpress-simple text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">Wordpress</p>
+									</div>
+									<div class="mx-2">
+										<div class="d-flex justify-content-center">
+											<div
+												class="bg-primary text-dark rounded-circle position-relative"
+												style="width: 2em; height: 2rem">
+												<div
+													class="position-absolute top-50 start-50 translate-middle text-nowrap">
+													<i class="fa-brands fa-css3 text-white"></i>
+												</div>
+											</div>
+										</div>
+										<p class="fw-light text-center">CSS</p>
+									</div>
+								</div>
+								<p class="card-text">
+									eラーニングでWordpressを使用したサイト作成課題を行いました。PHPのカスタマイズなどは行わず既に用意されたテーマを使用し、細部のデザイン変更についてはCSSを追記しました。
+								</p>
+								<div class="card-footer px-0 d-flex justify-content-between">
+									<a href="#" class="btn btn-pink"
+										><i class="fa-solid fa-link text-white me-1"></i>サイトへ</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work-section container" id="contact">
+				<h2 class="timeline-section-title fadeInUp">Contact</h2>
+
+				<div class="row justify-content-center">
+					<form class="p-5 col-12 col-lg-6">
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Name</label>
+							<input
+								type="email"
+								class="form-control"
+								id="exampleInputEmail1"
+								aria-describedby="emailHelp" />
+							<div id="emailHelp" class="form-text"></div>
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label"
+								>Message</label
+							>
+							<input
+								type="password"
+								class="form-control"
+								id="exampleInputPassword1" />
+						</div>
+						<button type="submit" class="btn btn-pink send-btn">send</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p class="copyright">©2023 Erika's Portfolio. All Rights Reserved</p>
+		</footer>
+		<script src="js/menu.js"></script>
+		<script src="js/fadein.js"></script>
+	</body>
 </html>
