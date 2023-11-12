@@ -10,8 +10,6 @@
     content: "";
     position: absolute;
     width: 3px;
-    /* background-color: #fff; */
-    /* 線の色 */
     background-color: rgb(255, 234, 253);
     top: 0;
     bottom: 0;
@@ -22,7 +20,6 @@
 /* Container around content */
 .timeline-5 {
     position: relative;
-    /* 隙間の色 */
     background-color: inherit;
     width: 100%;
 }
@@ -34,8 +31,6 @@
     width: 17px;
     height: 17px;
     right: 1px;
-    /* background-color: #fff; */
-    /* 丸の色 */
     background-color: rgb(255, 124, 248);
     top: 18px;
     border-radius: 50%;
@@ -55,10 +50,8 @@
     top: 18px;
     z-index: 1;
     left: 30px;
-    /* なんの色か不明 */
     border: medium solid rgb(255, 172, 251);
     border-width: 10px 10px 10px 0;
-    /* 吹き出しの色 */
     border-color: transparent rgb(255, 172, 251) transparent transparent;
 }
 
@@ -78,24 +71,7 @@
 }
 .gradient-custom-5 {
     /* fallback for old browsers */
-    /* background: #ebbba7; */
-    /* 背景の色 */
     background: #ffffff;
-
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(
-        to right,
-        rgba(242, 224, 216),
-        rgba(233, 229, 250)
-    ); */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* グラデーション　反映されなくなった */
-    /* background: linear-gradient(
-        to right,
-        rgb(242, 224, 216),
-        rgb(233, 229, 250)
-    ); */
 }
 
 .text {
